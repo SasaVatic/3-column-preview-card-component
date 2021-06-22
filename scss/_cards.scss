@@ -25,30 +25,25 @@
     border-radius: 10px 10px 0 0;
     .btn {
       @extend %button;
-      a {
-        color: $background-color-card-one;
-      }
+      color: $background-color-card-one;
+
       &:hover {
         background-color: $background-color-card-one;
-        a {
-          color: $very-dark-cyan;
-        }
+        color: $very-dark-cyan;
       }
     }
   }
   .card-two {
     @extend %card;
     background-color: $background-color-card-two;
+
     .btn {
       @extend %button;
-      a {
-        color: $background-color-card-two;
-      }
+      color: $background-color-card-two;
+
       &:hover {
         background-color: $background-color-card-two;
-        a {
-          color: $very-dark-cyan;
-        }
+        color: $very-dark-cyan;
       }
     }
   }
@@ -58,14 +53,11 @@
     border-radius: 0 0 10px 10px;
     .btn {
       @extend %button;
-      a {
-        color: $background-color-card-three;
-      }
+      color: $background-color-card-three;
+
       &:hover {
         background-color: $background-color-card-three;
-        a {
-          color: $very-dark-cyan;
-        }
+        color: $very-dark-cyan;
       }
     }
   }

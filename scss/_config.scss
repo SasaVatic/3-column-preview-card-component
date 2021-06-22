@@ -15,9 +15,6 @@ $very-dark-cyan: hsl(0, 0%, 95%);
 @mixin transition-btn-background {
   transition: background-color 300ms ease-in;
 }
-@mixin transition-btn-text-color {
-  transition: color 0s ease-in 250ms;
-}
 
 @mixin screen-lg {
   @media screen and (min-width: 1024px) {
