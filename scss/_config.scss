@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$background-color-card-one: hsl(31, 77%, 52%);
+$background-color-card-two: hsl(184, 100%, 22%);
+$background-color-card-three: hsl(179, 100%, 13%);
+$text-color-primary: hsla(0, 0%, 100%, 0.75);
+$very-dark-cyan: hsl(0, 0%, 95%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin transition-btn-background {
+  transition: background-color 300ms ease-in;
+}
+@mixin transition-btn-text-color {
+  transition: color 0s ease-in 250ms;
+}
+
+@mixin screen-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin btn-position-absolute {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}

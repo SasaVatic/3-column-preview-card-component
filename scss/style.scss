@@ -1,0 +1,25 @@
+@import 'config';
+@import 'cards';
+@import 'buttons';
+@import 'responsive';
+
+body {
+  background-color: $very-dark-cyan;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.attribution {
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  a {
+    text-decoration: none;
+    font-size: 2rem;
+  }
+}

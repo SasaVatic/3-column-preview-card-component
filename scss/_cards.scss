@@ -1,0 +1,72 @@
+%card {
+  padding: 50px;
+  h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
+    color: $very-dark-cyan;
+  }
+  p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: $very-dark-cyan;
+  }
+}
+
+.cards {
+  width: 90%;
+  margin: 5rem auto;
+  box-shadow: 0 0 50px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+
+  .card-one {
+    @extend %card;
+    background-color: $background-color-card-one;
+    border-radius: 10px 10px 0 0;
+    .btn {
+      @extend %button;
+      a {
+        color: $background-color-card-one;
+      }
+      &:hover {
+        background-color: $background-color-card-one;
+        a {
+          color: $very-dark-cyan;
+        }
+      }
+    }
+  }
+  .card-two {
+    @extend %card;
+    background-color: $background-color-card-two;
+    .btn {
+      @extend %button;
+      a {
+        color: $background-color-card-two;
+      }
+      &:hover {
+        background-color: $background-color-card-two;
+        a {
+          color: $very-dark-cyan;
+        }
+      }
+    }
+  }
+  .card-three {
+    @extend %card;
+    background-color: $background-color-card-three;
+    border-radius: 0 0 10px 10px;
+    .btn {
+      @extend %button;
+      a {
+        color: $background-color-card-three;
+      }
+      &:hover {
+        background-color: $background-color-card-three;
+        a {
+          color: $very-dark-cyan;
+        }
+      }
+    }
+  }
+}

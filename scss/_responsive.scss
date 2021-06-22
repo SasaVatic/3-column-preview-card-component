@@ -1,0 +1,34 @@
+@include screen-lg {
+  main {
+    height: 90vh;
+    overflow: hidden;
+  }
+  .cards {
+    width: 70%;
+    display: flex;
+
+    .card-one {
+      border-radius: 10px 0 0 10px;
+      position: relative;
+      p {
+        padding-bottom: 8rem;
+      }
+      .btn {
+        @include btn-position-absolute;
+      }
+    }
+    .card-two {
+      position: relative;
+      .btn {
+        @include btn-position-absolute;
+      }
+    }
+    .card-three {
+      border-radius: 0 10px 10px 0;
+      position: relative;
+      .btn {
+        @include btn-position-absolute;
+      }
+    }
+  }
+}
